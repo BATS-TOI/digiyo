@@ -1,0 +1,25 @@
+{
+  "contracts": {
+    "Digiyo": "./cadence/contracts/core/Digiyo.cdc",
+    "DigiyoSplitCollection": "./cadence/contracts/core/DigiyoSplitCollection.cdc",
+    "DigiyoAdminReceiver": "./cadence/contracts/core/DigiyoAdminReceiver.cdc"
+  },
+  "networks": {
+    "mainnet": "access.mainnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "admin": {
+			"address": "<your admin address>",
+			"key": "<you admin private key>"
+		},
+    "deputy": {
+			"address": "<your deputy address>",
+			"key": "<you deputy private key>"
+		}
+  },
+  "deployments": {
+    "mainnet": {
+      "admin": ["Digiyo", "DigiyoSplitCollection", "DigiyoAdminReceiver"]
+    }
+  }
+}
